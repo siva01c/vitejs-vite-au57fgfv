@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
-const Item = () => (
-  <nav>
+export function Navbar() {
+  return (
     <nav>
-      <ul>
+      <ul style={{ listStyle: 'none' }}>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -15,7 +15,5 @@ const Item = () => (
         </li>
       </ul>
     </nav>
-  </nav>
-);
-
-export default Navbar;
+  );
+}
